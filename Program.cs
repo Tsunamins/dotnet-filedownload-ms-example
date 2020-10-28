@@ -8,6 +8,7 @@ namespace readFile
     class Program
     {
         static void Main(string[] args){
+            // have to use this method of getting a new webclient instead, in older versions
             var wc = new System.Net.WebClient();
             string remoteUri = "http://www.contoso.com/library/homepage/images/";
             string fileName = "ms-banner.gif", myStringWebResource = null;
