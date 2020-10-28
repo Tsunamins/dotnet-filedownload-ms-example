@@ -1,0 +1,11 @@
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.csprojAssemblyReference.cache
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.csproj.CoreCompileInputs.cache
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.AssemblyInfoInputs.cache
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.AssemblyInfo.cs
+C:\Users\reill\Development\code\dotnet\readFile\bin\Debug\netcoreapp2.2\readFile.deps.json
+C:\Users\reill\Development\code\dotnet\readFile\bin\Debug\netcoreapp2.2\readFile.runtimeconfig.json
+C:\Users\reill\Development\code\dotnet\readFile\bin\Debug\netcoreapp2.2\readFile.runtimeconfig.dev.json
+C:\Users\reill\Development\code\dotnet\readFile\bin\Debug\netcoreapp2.2\readFile.dll
+C:\Users\reill\Development\code\dotnet\readFile\bin\Debug\netcoreapp2.2\readFile.pdb
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.dll
+C:\Users\reill\Development\code\dotnet\readFile\obj\Debug\netcoreapp2.2\readFile.pdb
