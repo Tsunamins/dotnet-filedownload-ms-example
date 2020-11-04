@@ -1,17 +1,16 @@
 ﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-
+using System.Text.RegularExpressions;
 
 namespace readFile
 {
     class Program
     {
         static void Main(string[] args){
+            // works but don't need to download file again
             // have to use this method of getting a new webclient instead, in older versions
             var wc = new System.Net.WebClient();
-            string remoteUri = "http://www.contoso.com/library/homepage/images/";
-            string fileName = "ms-banner.gif", myStringWebResource = null;
+            string remoteUri = "http://ringba-test-html.s3-website-us-west-1.amazonaws.com/TestQuestions/";
+            string fileName = "output.txt", myStringWebResource = null;
             // Create a new WebClient instance.
             //WebClient myWebClient = new WebClient();
             // Concatenate the domain with the Web resource filename.
@@ -21,12 +20,21 @@ namespace readFile
             wc.DownloadFile(myStringWebResource,fileName);		
             Console.WriteLine("Successfully Downloaded File \"{0}\" from \"{1}\"", fileName, myStringWebResource);
             Console.WriteLine("\nDownloaded file saved in the following file system folder:\n\t" + "Application.StartupPath");
+            Console.WriteLine("New code below");
+            Regex rx = new Regex(@"m|M",
+            RegexOptions.Compiled | RegexOptions.IgnoreCase);
+
+            string text = "MelancholicMelancholicallyMelancholinessMelanilinMelanorrhoeaMelanosisMeletskiMeliaceaeMelibioseMelicrateMeliorabilityMelissaMelithemiaMellifluentlyMellisonantMellowyMellsMelodeonsMelodizesMelodizingMelodramaticsMelodramatistsMelodramatizationMelolonthidaeMelonMelosMelotropeMelungeonMembranogenicMemnonMemnoniumMemorializesMenacinglyPeltatePeltigeraceaePemolinePemphigousPenaeaceaePenalPenalistPenallyPenancingPenbardPenciliformPencraftPenetrablyPenetrologyPenetrolqgyPenicillationPeninsularismPenitencyPenitentiariesPennaceousPennatularianPenneyPennyPennillPennyroyalsPenologiesPensilsPentacetatePentacrosticPentametersPentaphylaxPentastichousPentastomumPentasulphidePentateuchalPentelicanPentosidePentremitePenumbraPenwomanshipPephredoPepperishPepsPepsinhydrochloricPepsiniferousPeracidsPeracutePerambulatesPerambulatorsPerceivablePerceivedlyPerceiversPercentablePerchlorinatingPercolable";
+
+            MatchCollection matches = rx.Matches(text);
+
+            Console.WriteLine("{0} matches found in:\n   {1}",
+                          matches.Count,
+                          text);
           
-
-
         }
-    } // end class
-} // end namespace
+    } 
+} 
 
 
 
